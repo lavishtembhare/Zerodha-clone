@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.golden-navbar{
+    width:100%;
+    height: 67px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.golden-Logo img{
+    height:22px;
+}
+
+.golden-nav-link a{
+    text-decoration: none;
+    padding: 20px;
+    /* margin-right: 10px; */
+    font-size: 16px;
+    color: #424242;
+}
+
+.golden-nav-link a:hover{
+    color:rgb(79, 111, 255)
+}
+
+/* About section */
+.about{
+    width: 100%;
+    height:296px;
+    font-weight: 500;
+    /* background-color: rgb(154, 154, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+/* second section */
+
+.about h2{
+    width: 750px;
+    font-size: 33px;
+    height: 80px;
+    display: flex;
+    font-weight:500;
+    /* align-items: center; */
+    margin-top: 40px;
+}
+
+.about2{
+    width:100%;
+    height: 500px;
+    /* background-color: seagreen; */
+    display:flex;
+    color: #424242;
+    justify-content: center;
+}
+
+.size{
+    width:1100px;
+    height:500px;
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(218, 218, 218);
+}
+
+
+.story{
+    width:400px;
+}
+
+.story span{
+    margin:10px;
+}
+
+.story .p1{
+    width:400px;
+    /* height: 172px; */
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.story hr{
+    padding:5px;
+    border:none;
+}
+
+.story2{
+    width:400px;
+}
+
+.story2 span{
+    margin:10px;
+}
+
+
+.story2 hr{
+    padding:5px;
+    border:none;
+}
+
+/* people section  */
+
+.people {
+    width: 100%;
+    height:100px;
+    /* background-color: rgb(131, 117, 226); */
+    display: flex;
+    justify-content: center;
+}
+
+.people h2{
+    text-align: center;
+    display: flex;
+    font-size:32px;
+    color: #424242;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+}
+
+.Nithin{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    /* background-color: rgb(191, 188, 212); */
+    justify-content: center;
+}
+
+.Kamath{
+    width:900px;
+    height: 500px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.image{
+    width:354px;
+    /* height: 402px; */
+}
+
+.image .img{
+    width:354px;
+    display: flex;
+    justify-content: center;
+}
+
+.image img{
+    width: 295px;
+    height: 295px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.image h5{
+    width: 354px;
+    height: 34px;
+    color: #424242;
+    font-weight: 500;
+    font-size: 25px;
+    Display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image p{
+    width: 354px;
+    height: 25px;
+    display: flex;
+    color: #424242;
+    font-size: 13px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin: 14px 0 15px;
+}
+
+.Kamath .bio{
+    margin-top: 30px;
+    width:510px;
+    color: #424242;
+}
+
+.Kamath .bio hr{
+    border:none;
+    padding:5px;
+}
+
+.Kamath .bio span{
+    margin:10px;
+}
+
+.Kamath .bio a{
+    text-decoration: none;
+    color:#387ED1;
+}
+
+.Kamath .bio a:hover{
+    color:#424242;
+}
+
+.container{
+    width:100%;
+    height:1212px;
+    display: flex;
+    justify-content: center;
+}
+
+.team-member{
+    width: 1100px;
+    display: flex;
+    justify-content:center;
+}
+
+.row-bwtween{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.row-bwtween img{
+    width: 237px;
+    height:237px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.row-bwtween h5{
+    width:237px;
+    height:34px;
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 5px;
+}
+
+.row-bwtween p{
+    width:237px;
+    height:25px;
+    font-size:14px;
+    display:flex;
+    justify-content:center;
+    margin-bottom:10px;
+}
+
+.row-bwtween a{
+    text-decoration: none;
+    color: #424242;
+}
+
+/* footer section */
+.footer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-top:40px;
+    border-top:1px solid rgb(245, 245, 245);
+    background-color: #fbfbfb;
+}
+
+.final{
+    margin-top:40px;
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.image2{
+    width:242px;
+    height:334px;
+    padding:10px 0px;
+}
+
+.company{
+    width:242px;
+    height:334px;
+}
+
+.support{
+    width:242px;
+    height:334px;
+}
+
+.account{
+    width:242px;
+    height:334px;
+}
+
+.image2 img{
+    height: 22px;
+    margin-bottom: 15px;
+}
+
+.image2 span{
+    height:23px;
+    font-size: 12px;
+    display: flex;
+}
+
+.image2 .icon{
+    margin-top:10px;
+    border-bottom:1px solid rgb(194, 194, 194);
+}
+
+.image2 .icon i{
+    padding-right:15px;
+    padding-bottom:10px;
+    font-size: 20px;
+    color: #424242;
+}
+
+.image2 .icon1{
+    margin-top:10px;
+    font-size: 20px;
+    
+}
+
+.image2 .icon1 i{
+    padding-right:15px;
+    font-size: 20px;
+    color: #424242;
+}
+
+.final a{
+    text-decoration: none;
+    color:#424242;
+}
+
+.final a:hover{
+    color:#387ED1;
+}
+
+.final ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.final li{
+    padding: 5px;
+}
+
+.final h3{
+    font-size: 19px;
+    margin-left: 3px;
+    font-weight: 500;
+    color: #424242;
+}

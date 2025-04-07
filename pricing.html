@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="website icon" type="png" href="/Images/zerodha.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Zerodha brokerage charges, fees & taxes on trading and investing</title>
+</head>
+<body>
+<!-- script section -->
+ <script>
+    function showTable(tableId) {
+        //hide all tables
+        document.querySelectorAll('.table-container').forEach(table =>{
+            table.classList.remove('active');
+        });
+
+        //remove active class from all tabs
+        document.querySelectorAll('.tab').forEach(tab =>{
+            tab.classList.remove('active');
+        });
+
+        //show selected table
+        document.getElementById(tableId).classList.add('active');
+
+        //highlight the active tab
+        document.querySelector(`.tab[oneclick="showTable('${tableId}')"]`).classList.add('active');
+    }
+ </script>
+<!-- Header section -->
+    <header class="golden-navbar">
+        <div class="golden-Logo">
+            <a href="/index.html"><img src="/Images/Logo.png" alt="logo"></a>
+        </div>
+        <div class="golden-nav-link">
+            <a href="/Signup.html" >Signup</a>
+            <a href="/About.html" >About</a>
+            <a href="product.html" >Product</a>
+            <a href="/pricing.html" >Pricing</a>
+            <a href="/support.html" >Support</a>
+            <a href="#" ><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </header>
+
+<!-- charges section -->
+ <section class="charges">
+    <div class="charges-product">
+        <h1>Charges</h1>
+        <p>List of all charges and taxes</p>
+    </div>
+ </section>
+
+ <!-- List of all charges and taxes -->
+  <section class="charges-list">
+    <div class="list">
+        <div class="list-item">
+            <img src="/Images/pricing-eq.svg" alt="pricing-eq">
+            <h1>Free equity delivery</h1>
+            <p>All equity delivery investments (NSE, BSE), are absolutely free — ₹ 0 brokerage.</p>
+        </div>
+        <div class="list-item">
+            <img src="/Images/other-trades.svg" alt="other-trades">
+            <h1>Intraday and F&O trades</h1>
+            <p>Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades across equity, currency, and commodity trades. Flat ₹20 on all option trades.</p>
+        </div>
+        <div class="list-item">
+            <img src="/Images/pricing-eq.svg" alt="pricing-eq">
+            <h1>Free direct MF</h1>
+            <p>All direct mutual fund investments are absolutely free — ₹ 0 commissions & DP charges.</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- nav tab -->
+<div class="nav-tab">
+    <div class="tabs">
+        <div class="tab active" onclick="showTable('equity')">Equity</div>
+        <div class="tab" onclick="showTable('currency')">Currency</div>
+        <div class="tab" onclick="showTable('commodity')">Commodity</div>
+    </div>
+</div>
+
+<!-- table section -->
+<div class="container">
+<div id="equity" class="table-container active">
+    
+    <table>
+        <tr>
+            <th>      </th>
+            <th>Equity</th>
+            <th>Equity intraday</th>
+            <th>F&O-Future</th>
+            <th>F&O-Option</th>
+        </tr>
+        <tr class="thead">
+            <td>Brokerage</td>
+            <td>Zero Brokerage</td>
+            <td>0.03% or Rs. 20/executed order whichever is lower</td>
+            <td>0.03% or Rs. 20/executed order whichever is lower</td>
+            <td>Flat Rs. 20 per executed order</td>
+        </tr>
+        <tr>
+            <td>STT/CTT</td>
+            <td>0.1% on buy & sell</td>
+            <td>0.025% on the sell side</td>
+            <td>0.02% on the sell side</td>
+            <td><li>0.0125% of the intrinsic value on options that are bought and exercised</li>
+                <li>0.1% on sell side (on premium)</li></td>
+        </tr>
+        <tr class="thead">
+            <td>Transaction charges</td>
+            <td>NSE: 0.00297%
+                BSE: 0.00375%</td>
+            <td>
+                 NSE: 0.00297%
+                 BSE: 0.00375%
+                </td>
+            <td>NSE: 0.00173%
+                BSE: 0</td>
+            <td>NSE: 0.03503% (on premium)
+                BSE: 0.0325% (on premium)</td>
+        </tr>
+        <tr>
+            <td>GST</td>
+            <td>18% on (brokerage + SEBI charges + transaction charges)</td>
+            <td>18% on (brokerage + SEBI charges + transaction charges)</td>
+            <td>18% on (brokerage + SEBI charges + transaction charges)</td>
+            <td>18% on (brokerage + SEBI charges + transaction charges)</td>
+        </tr>
+        <tr class="thead">
+            <td>SEBI charges</td>
+            <td>₹10 / crore</td>
+            <td>₹10 / crore</td>
+            <td>₹10 / crore</td>
+            <td>₹10 / crore</td>
+        </tr>
+        <tr>
+            <td>Stamp charges</td>
+            <td>0.015% or ₹1500 / crore on buy side	</td>
+            <td>0.003% or ₹300 / crore on buy side</td>
+            <td>0.002% or ₹200 / crore on buy side</td>
+            <td>0.003% or ₹300 / crore on buy side</td>
+        </tr>
+    </table>
+</div>
+</div>
+
+<div class="container">
+<div id="currency" class="table-container">
+    <table>
+        <tr>
+            <th>     </th>
+            <th>Currency futures</th>
+            <th>Currency options</th>
+        </tr>
+        <tr class="thead">
+            <td>Brokerage</td>
+            <td>0.03% or ₹ 20/executed order whichever is lower</td>
+            <td>₹ 20/executed order</td>
+        </tr>
+        <tr>
+            <td>STT/CTT</td>
+            <td>No STT</td>
+            <td>No STT</td>
+        </tr>
+        <tr class="thead">
+            <td>Transaction charges</td>
+            <td>NSE: 0.00035%
+                BSE: 0.00045%</td>
+            <td>NSE: 0.0311%
+                BSE: 0.001%</td>
+        </tr>
+        <tr>
+            <td>GST</td>
+            <td>18% on (brokerage + SEBI charges + transaction charges)</td>
+            <td>18% on (brokerage + SEBI charges + transaction charges)</td>
+        </tr>
+        <tr class="thead">
+            <td>SEBI charges</td>
+            <td>₹10 / crore</td>
+            <td>₹10 / crore</td>
+        </tr>
+        <tr>
+            <td>Stamp charges</td>
+            <td>0.0001% or ₹10 / crore on buy side</td>
+            <td>0.0001% or ₹10 / crore on buy side</td>
+        </tr>
+    </table>
+</div>
+</div>
+
+<div class="container">
+<div id="commodity" class="table-container">
+    <table>
+        <tr>
+            <th>    </th>
+            <th>Commodity futures</th>
+            <th>Commodity options</th>
+        </tr>
+        <tr class="thead">
+            <td>Brokerage</td>
+            <td>0.03% or Rs. 20/executed order whichever is lower</td>
+            <td>₹ 20/executed order</td>
+        </tr>
+        <tr>
+            <td>STT/CTT</td>
+            <td>0.01% on sell side (Non-Agri)</td>
+            <td>0.05% on sell side</td>
+        </tr>
+        <tr class="thead">
+            <td>Transaction charges</td>
+            <td>MCX: 0.0021%
+                NSE: 0.0001%</td>
+            <td>MCX: 0.0418%
+                NSE: 0.001%</td>
+        </tr>
+        <tr>
+            <td>GST</td>
+            <td>18% on (brokerage + SEBI charges + transaction charges)</td>
+            <td>18% on (brokerage + SEBI charges + transaction charges)</td>
+        </tr>
+        <tr class="thead">
+            <td>SEBI charges</td>
+            <td>Agri:
+                ₹1 / crore
+                Non-agri:
+                ₹10 / crore</td>
+            <td>₹10 / crore</td>
+        </tr>
+        <tr>
+            <td>Stamp charges</td>
+            <td>0.002% or ₹200 / crore on buy side</td>
+            <td>0.003% or ₹300 / crore on buy side</td>
+        </tr>
+    </table>
+    </div>
+</div>
+
+<div class="calculator">
+    <div class="brokerage">
+        <a href="">Calculate your costs upfront</a> using our brokerage calculator
+    </div>
+</div>
+
+<!-- Charges for account opening -->
+<section class="section">
+    <div class="account-opening">
+        <h2>Charges for account opening</h2>
+        <table>
+            <tr>
+                <th>Type of account</th>
+                <th>Charges</th>
+            </tr>
+            <tr class="thead">
+                <td>Online account</td>
+                <td>FREE</td>
+            </tr>
+            <tr>
+                <td>Offline account</td>
+                <td>FREE</td>
+            </tr>
+            <tr class="thead">
+                <td>NRI account (offline only)</td>
+                <td>₹ 500</td>
+            </tr>
+            <tr>
+                <td>Partnership, LLP, HUF, or Corporate accounts (offline only)</td>
+                <td>₹ 500</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section class="section">
+    <div>
+        <h2>Charges for optional value added services</h2>
+    </div>
+    <table class="Charges-for-optional">
+        <tr >
+            <th>Service</th>
+            <th>Billing Frquency</th>
+            <th>Charges</th>
+        </tr>
+        <tr class="thead">
+            <td>Tickertape</td>
+            <td>Monthly / Annual</td>
+            <td>Free: 0 | Pro: 249/2399</td>
+        </tr>
+        <tr>
+            <td>Smallcase</td>
+            <td>Per transaction</td>
+            <td>Buy & Invest More: 100 | SIP: 10</td>
+        </tr>
+        <tr class="thead">
+            <td>Kite Connect</td>
+            <td>Monthly</td>
+            <td>Connect: 2000 | Historical: 2000</td>
+        </tr>
+    </table>
+</section>
+
+<!-- Footer area -->
+<div class="footer">
+    <div class="final">
+        <div class="image2">
+            <img src="/Images/Logo.png">
+            <span><i class="fa fa-copyright" aria-hidden="true"></i>2010 - 2025, Zerodha Broking Ltd.</span>
+            <span>All rights reserved.</span>
+            <div class="icon">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="icon1">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+        <div class="company">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Referral programme</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Zerodha.tech</a></li>
+                <li><a href="#">Open source</a></li>
+                <li><a href="#">Press & media</a></li>
+                <li><a href="#">Zerodha Cares (CSR)</a></li>
+            </ul>
+        </div>
+        <div class="support">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Support portal</a></li>
+                <li><a href="#">Z-Connect blog</a></li>
+                <li><a href="#">List of charges</a></li>
+                <li><a href="#">Downloads & resources</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Market overview</a></li>
+                <li><a href="#">How to file a complaint?</a></li>
+                <li><a href="#">Status of your complaints</a></li>
+            </ul>
+        </div>
+        <div class="Account">
+            <h3>Account</h3>
+            <ul>
+                <li><a href="#">Open an account</a></li>
+                <li><a href="#">Fund transfer</a></li>
+            </ul>
+        </div>
+    </div>
+ </div>

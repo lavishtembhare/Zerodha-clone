@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.golden-navbar{
+    width:100%;
+    height: 67px;
+    background-color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.golden-Logo img{
+    height:22px;
+}
+
+.golden-nav-link a{
+    text-decoration: none;
+    padding: 20px;
+    /* margin-right: 10px; */
+    font-size: 16px;
+    color: #424242;
+}
+
+.golden-nav-link a:hover{
+    color:rgb(79, 111, 255)
+}
+
+.charges{
+    width:100%;
+    height:380px;
+    display: flex;
+    padding-top: 67px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(21, 175, 152); */
+}
+
+.charges-product{
+    width:50%;
+    /* background-color: aqua; */
+}
+
+.charges h1{
+    font-size: 44px;
+    color: #424242;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.charges p{
+   font-size: 20px;
+   color: #9b9b9b;
+   font-weight: 500;
+   display: flex;
+   justify-content: center;
+   margin: 15px 0px 15px;
+}
+
+
+/* List of all charges and taxes */
+.charges-list{
+    width: 100%;
+    display: flex;
+    margin-top:100px;
+    justify-content: center;
+}
+
+.list{
+    width:70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item{
+    height:402px;
+    width: 337px;
+}
+
+.charges-list img{
+    width:250px;
+    margin-left:50px;
+}
+
+.charges-list h1{
+    width: 337px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    color: #424242;
+    font-weight: 500;
+}
+
+.charges-list p{
+    font-size: 16px;
+    color: #424242;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 337px;
+    margin-top:16px;
+    line-height: 27px;
+}
+
+.nav-tab{
+    width: 100%;
+    /* background-color: #424242; */
+    display: flex;
+    justify-content: center;
+}
+
+.tabs {
+    width:1100px;
+    display: flex;
+    /* background-color: aqua; */
+    gap: 20px;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #dedede;
+    cursor: pointer;
+}
+
+.tabs div {
+    padding: 10px 20px;
+    border-bottom: 3px solid transparent;
+}
+
+.tabs div.active {
+    border-bottom: 3px solid rgb(78, 78, 255);
+}
+
+.table-container {
+    display: none;
+    margin-top: 20px;
+}
+.table-container.active {
+    display: block;
+}
+table {
+    width: 1100px;
+    height:600px;
+    color:#424242;
+    font-weight: 500;
+    background-color: #f7f7f7;
+    margin-left: 210px;
+    border: 1px solid rgb(222, 222, 222);
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    padding: 10px;
+    height:50px;
+    text-align: left;
+}
+
+td{
+    padding: 10px;
+    text-align: left;
+}
+
+.thead{
+    background-color: #ffffff;
+}
+
+
+.calculator{
+    width:100%;
+    height:100px;
+    /* background-color: #dedede; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #424242;
+    font-size: 22px;
+}
+
+.calculator a{
+    text-decoration: none;
+    color: rgb(78, 78, 255);
+}
+
+.section{
+    width:100%;
+    height:370px;
+    /* background-color: aqua; */
+}
+
+.section h2{
+    width:1100px;
+    height:50px;
+    /* background-color: #dedede; */
+    display: flex;
+    color: #424242;
+    font-weight: 500;
+    align-items: center;
+    margin-left:210px;
+}
+
+.section table{
+    height:250px;
+}
+
+.section .Charges-for-optional{
+    height:200px;
+}
+
+/* footer section */
+.footer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    border-top:1px solid rgb(245, 245, 245);
+    background-color: #fbfbfb;
+}
+
+.final{
+    margin-top:40px;
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.image2{
+    width:242px;
+    height:334px;
+    padding:10px 0px;
+}
+
+.company{
+    width:242px;
+    height:334px;
+}
+
+.support{
+    width:242px;
+    height:334px;
+}
+
+.account{
+    width:242px;
+    height:334px;
+}
+
+.image2 img{
+    height: 22px;
+    margin-bottom: 15px;
+}
+
+.image2 span{
+    height:23px;
+    font-size: 12px;
+    display: flex;
+}
+
+.image2 .icon{
+    margin-top:10px;
+    border-bottom:1px solid rgb(194, 194, 194);
+}
+
+.image2 .icon i{
+    padding-right:15px;
+    padding-bottom:10px;
+    font-size: 20px;
+    color: #424242;
+}
+
+.image2 .icon1{
+    margin-top:10px;
+    font-size: 20px;
+    
+}
+
+.image2 .icon1 i{
+    padding-right:15px;
+    font-size: 20px;
+    color: #424242;
+}
+
+.final a{
+    text-decoration: none;
+    color:#424242;
+}
+
+.final a:hover{
+    color:#387ED1;
+}
+
+.final ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.final li{
+    padding: 5px;
+}
+
+.final h3{
+    font-size: 19px;
+    margin-left: 3px;
+    font-weight: 500;
+    color: #424242;
+}
