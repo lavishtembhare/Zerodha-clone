@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Menu Popup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f9f9f9;
+        }
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background: white;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .menu-popup {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .menu-content {
+            position: absolute;
+            top: 10%;
+            left: 70%;
+            transform: translateX(-50%);
+            width: 700px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .close-btn {
+            float: right;
+            font-size: 18px;
+            cursor: pointer;
+            color: red;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .menu-item {
+            text-align: center;
+        }
+        .menu-item img {
+            width: 40px;
+            height: 40px;
+        }
+        .menu-item p {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .section{
+            width:650px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+            height: 263px;
+        }
+
+        .menu-section {
+            margin-top: 30px;
+        }
+        .menu-section h3 {
+            margin-bottom: 10px;
+        }
+        .menu-list {
+            list-style: none;
+        }
+        .menu-list li {
+            padding: 5px 0;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>Logo</h2>
+        <div class="menu-icon" onclick="openMenu()">&#9776;</div>
+    </div>
+
+    <!-- Popup Menu -->
+    <div class="menu-popup" id="menuPopup">
+        <div class="menu-content">
+            <span class="close-btn" onclick="closeMenu()">✖</span>
+            
+            <!-- Top Links -->
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/40" alt="Kite">
+                    <h4>Kite</h4>
+                    <p>Trading platform</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/40" alt="Console">
+                    <h4>Console</h4>
+                    <p>Backoffice</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/40" alt="Kite Connect">
+                    <h4>Kite Connect</h4>
+                    <p>Trading APIs</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/40" alt="Coin">
+                    <h4>Coin</h4>
+                    <p>Mutual funds</p>
+                </div>
+            </div>
+
+            <!-- Utilities, Updates, Education -->
+             <div class="section">
+                <div class="menu-section">
+                    <h3>Utilities</h3>
+                    <ul class="menu-list">
+                        <li>Brokerage calculator</li>
+                        <li>Margin calculator</li>
+                        <li>Holiday calendar</li>
+                        <li>Markets</li>
+                    </ul>
+                </div>
+                <div class="menu-section">
+                    <h3>Updates</h3>
+                    <ul class="menu-list">
+                        <li>Z-Connect blog</li>
+                        <li>Pulse News</li>
+                        <li>Circulars / Bulletin</li>
+                        <li>IPOs</li>
+                    </ul>
+                </div>
+                <div class="menu-section">
+                    <h3>Education</h3>
+                    <ul class="menu-list">
+                        <li>Varsity</li>
+                        <li>Trading Q&A</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openMenu() {
+            document.getElementById("menuPopup").style.display = "block";
+        }
+
+        function closeMenu() {
+            document.getElementById("menuPopup").style.display = "none";
+        }
+
+        // Close menu when clicking outside menu-content
+        document.getElementById("menuPopup").addEventListener("click", function(event) {
+            let menuContent = document.querySelector(".menu-content");
+            if (!menuContent.contains(event.target)) {
+                closeMenu();
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.golden-navbar{
+    width:100%;
+    height: 67px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.golden-Logo img{
+    height:22px;
+}
+
+.golden-nav-link a{
+    text-decoration: none;
+    padding: 20px;
+    /* margin-right: 10px; */
+    font-size: 16px;
+    color: #424242;
+}
+
+.golden-nav-link a:hover{
+    color:rgb(79, 111, 255)
+}
+
+/* Product section */
+.section{
+    width:100%;
+    height:350px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 1px solid rgb(218, 218, 218); */
+}
+
+.product{
+    width: 750px;
+    /* background-color: blue; */
+    align-items: center;
+    padding-top: 10px;
+}
+
+.product h1{
+    width: 750px;
+    height:55px;
+    color: #424242;
+    font-weight: 500;
+    display: flex;
+    font-size: 44px;
+    justify-content: center;
+}
+
+.product p{
+    font-size: 20px;
+    height:36px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 20px;
+    align-items: center;
+}
+
+.product span{
+    width: 750px;
+    height:25px;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.product span a{
+    text-decoration: none;
+    color: rgb(62, 93, 248);
+    margin-left:5px;
+}
+
+.product span a:hover{
+    color:#424242;
+}
+
+/* kite */
+.kite{
+    width:100%;
+    height:509px;
+    display: flex;
+    justify-content: center;
+}
+
+.kite-product{
+    width: 70%;
+    padding-top: 80px;
+    color:#424242;
+    height: 509px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(218, 218, 218);
+}
+
+.kite-image{
+    width: 558px;
+}
+
+.kite-content{
+    width:337px;
+    height:429px;
+    margin-top: 50px;
+}
+.kite-content h1{
+    height:42px;
+    font-size: 32px;
+    margin-bottom:20px;
+}
+
+.kite-content p{
+    font-size: 16px;
+    margin: 16px 0 15px;
+}
+
+.kite-content hr{
+    border:none;
+}
+
+.kite-button{
+    width:337px;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.kite-button a{
+    text-decoration: none;
+    color: rgb(62, 93, 248);
+    margin-right: 70px;
+}
+
+.kite-button i{
+    font-size: 14px;
+}
+
+.kite-button a:hover{
+    color:#424242;
+}
+
+.kite-badge{
+    width:337px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kite-badge img{
+    width:151px;
+    margin-right: 20px; 
+}
+
+.console{
+    width: 100%;
+    height: 619px;
+    display:flex;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.console-product{
+    width:70%;
+    height:619px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.console-content{
+    width:337px;
+    height:619px;
+    display: flex;
+    align-items: center;
+}
+
+.console-content h1{
+    height:42px;
+    font-size: 32px;
+    margin-bottom:20px;
+}
+
+.console-content p{
+    font-size: 16px;
+    /* margin: 16px 0 15px; */
+}
+
+.console-content hr{
+    padding:5px;
+    border:none;
+}
+
+.console-content a{
+    text-decoration: none;
+    font-size: 16px;
+    color:rgb(62, 93, 248);
+}
+
+.console-content a i{
+    font-size: 12px;
+}
+
+.console-content a:hover{
+    color:#424242;
+}
+
+.console-image{
+    width:623px;
+}
+
+/* Zerodha coin section */
+
+.coin{
+    width: 100%;
+    height: 491px;
+    display:flex;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.coin-product{
+    width:70%;
+    height:491px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.coin-image{
+    width: 500px;
+    height: 403px;
+}
+.coin-image img{
+    height:403px;
+    display: flex;
+}
+
+.coin-content{
+    width:337px;
+    height:400px;
+    display: flex;
+    color: #424242;
+    align-items: center;
+}
+
+.coin-content h1{
+    font-size:37px;
+    margin-bottom:30px;
+}
+
+.coin-content p{
+    font-size: 16px;
+}
+
+.coin-content hr{
+    padding:5px;
+    border:none;
+}
+
+.coin-content a{
+    text-decoration: none;
+    color:rgb(62, 93, 248);
+    font-size: 16px;
+}
+
+.coin-content a i{
+    font-size: 15px;
+}
+
+.coin-content .logo-image{
+    width: 337px;
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.logo-image img{
+    width: 151px;
+    margin-right: 20px;
+}
+
+.universe{
+    width: 100%;
+    height: 400px;
+    display:flex;
+    color: #424242;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+}
+
+.universe h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.universe-product{
+    width:1100px;
+    height:400px;
+}
+
+.universe-product p{
+    font-size: 16px;
+    margin:16px 0px 50px;
+}
+
+.services{
+    height:384px;
+}
+
+.fund{
+    width:1100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services p{
+    width:282px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.fund-hous img{
+    width:198px;
+}
+
+.fund-hous p{
+    width:254px;
+}
+
+.sensibull img{
+    width:228px;
+}
+
+.sensibull p{
+    width:282px;
+}
+
+.tijori img{
+    width:148px;
+}
+
+.tijori p{
+    width:218px;
+}
+
+.streak img{
+    width:166px;
+}
+
+.streak p{
+    width:254px;
+}
+
+.smallcase img{
+    width:210px;
+}
+
+.smallcase p{
+    width:282px;
+}
+
+.ditto img{
+    width:143px;
+}
+
+.ditto p{
+    width:218px;
+}
+
+/* Footer section */
+
+.footer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-top:80px;
+    border-top:1px solid rgb(245, 245, 245);
+    background-color: #fbfbfb;
+}
+
+.final{
+    margin-top:40px;
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.image2{
+    width:242px;
+    height:334px;
+    padding:10px 0px;
+}
+
+.company{
+    width:242px;
+    height:334px;
+}
+
+.support{
+    width:242px;
+    height:334px;
+}
+
+.account{
+    width:242px;
+    height:334px;
+}
+
+.image2 img{
+    height: 22px;
+    margin-bottom: 15px;
+}
+
+.image2 span{
+    height:23px;
+    font-size: 12px;
+    display: flex;
+}
+
+.image2 .icon{
+    margin-top:10px;
+    border-bottom:1px solid rgb(194, 194, 194);
+}
+
+.image2 .icon i{
+    padding-right:15px;
+    padding-bottom:10px;
+    font-size: 20px;
+    color: #424242;
+}
+
+.image2 .icon1{
+    margin-top:10px;
+    font-size: 20px;
+    
+}
+
+.image2 .icon1 i{
+    padding-right:15px;
+    font-size: 20px;
+    color: #424242;
+}
+
+.final a{
+    text-decoration: none;
+    color:#424242;
+}
+
+.final a:hover{
+    color:#387ED1;
+}
+
+.final ul{
+    list-style: none;
+    margin-top:20px;
+    
+}
+
+.final li{
+    padding: 5px;
+}
+
+.final h3{
+    font-size: 19px;
+    margin-left: 3px;
+    font-weight: 500;
+    color: #424242;
+}
